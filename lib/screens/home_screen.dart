@@ -70,6 +70,12 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(right: 25, top: 20),
                   alignment: Alignment.center,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: Image.asset("images/cover.jpg",
+                        width: MediaQuery.of(context).size.width / 1.2,
+                        fit: BoxFit.contain),
+                  ),
                 ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
